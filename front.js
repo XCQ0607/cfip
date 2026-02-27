@@ -3,9 +3,9 @@
 
 // ==================== 配置区域 ====================
 // 如果环境变量存在则优先使用环境变量
-const DEFAULT_USER_ID = '2982f122-9649-40dc-bc15-fa3ec91d8921';
-const DEFAULT_HOSTNAME = 'fsnip.chinax.nyc.mn';
-const DEFAULT_ACCESS_KEY = 'xcq0607'; // 默认访问密钥
+const DEFAULT_USER_ID = '';
+const DEFAULT_HOSTNAME = '';
+const DEFAULT_ACCESS_KEY = ''; // 默认访问密钥
 // ================================================
 
 // 基础变量初始化
