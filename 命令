@@ -1,0 +1,5 @@
+npx wrangler login
+
+npx wrangler pages deploy public --project-name cfip
+
+npx wrangler pages project delete cfip

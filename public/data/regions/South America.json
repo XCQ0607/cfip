@@ -1,0 +1,92 @@
+[
+  {
+    "ip": "38.180.79.9",
+    "port": 443,
+    "tls": true,
+    "datacenter": "GRU",
+    "region": "South America",
+    "city": "São Paulo",
+    "asn": "9009",
+    "latency": "383 ms"
+  },
+  {
+    "ip": "38.180.78.255",
+    "port": 443,
+    "tls": true,
+    "datacenter": "GRU",
+    "region": "South America",
+    "city": "São Paulo",
+    "asn": "9009",
+    "latency": "385 ms"
+  },
+  {
+    "ip": "168.138.141.235",
+    "port": 2053,
+    "tls": true,
+    "datacenter": "GRU",
+    "region": "South America",
+    "city": "São Paulo",
+    "asn": "31898",
+    "latency": "389 ms"
+  },
+  {
+    "ip": "146.235.59.153",
+    "port": 8443,
+    "tls": true,
+    "datacenter": "GRU",
+    "region": "South America",
+    "city": "São Paulo",
+    "asn": "31898",
+    "latency": "390 ms"
+  },
+  {
+    "ip": "132.226.163.224",
+    "port": 2053,
+    "tls": true,
+    "datacenter": "GRU",
+    "region": "South America",
+    "city": "São Paulo",
+    "asn": "31898",
+    "latency": "398 ms"
+  },
+  {
+    "ip": "146.235.59.153",
+    "port": 2053,
+    "tls": true,
+    "datacenter": "GRU",
+    "region": "South America",
+    "city": "São Paulo",
+    "asn": "31898",
+    "latency": "400 ms"
+  },
+  {
+    "ip": "164.152.61.166",
+    "port": 50478,
+    "tls": true,
+    "datacenter": "GRU",
+    "region": "South America",
+    "city": "São Paulo",
+    "asn": "31898",
+    "latency": "410 ms"
+  },
+  {
+    "ip": "132.226.163.224",
+    "port": 8443,
+    "tls": true,
+    "datacenter": "GRU",
+    "region": "South America",
+    "city": "São Paulo",
+    "asn": "31898",
+    "latency": "410 ms"
+  },
+  {
+    "ip": "144.22.144.168",
+    "port": 4242,
+    "tls": true,
+    "datacenter": "GRU",
+    "region": "South America",
+    "city": "São Paulo",
+    "asn": "31898",
+    "latency": "426 ms"
+  }
+]

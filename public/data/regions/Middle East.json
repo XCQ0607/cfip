@@ -1,0 +1,342 @@
+[
+  {
+    "ip": "45.86.228.104",
+    "port": 443,
+    "tls": true,
+    "datacenter": "DXB",
+    "region": "Middle East",
+    "city": "Dubai",
+    "asn": "62005",
+    "latency": "101 ms"
+  },
+  {
+    "ip": "193.123.90.82",
+    "port": 12648,
+    "tls": true,
+    "datacenter": "DXB",
+    "region": "Middle East",
+    "city": "Dubai",
+    "asn": "31898",
+    "latency": "102 ms"
+  },
+  {
+    "ip": "129.151.128.105",
+    "port": 16731,
+    "tls": true,
+    "datacenter": "DXB",
+    "region": "Middle East",
+    "city": "Dubai",
+    "asn": "31898",
+    "latency": "104 ms"
+  },
+  {
+    "ip": "193.123.66.187",
+    "port": 34501,
+    "tls": true,
+    "datacenter": "DXB",
+    "region": "Middle East",
+    "city": "Dubai",
+    "asn": "31898",
+    "latency": "104 ms"
+  },
+  {
+    "ip": "139.185.50.5",
+    "port": 14594,
+    "tls": true,
+    "datacenter": "DXB",
+    "region": "Middle East",
+    "city": "Dubai",
+    "asn": "31898",
+    "latency": "106 ms"
+  },
+  {
+    "ip": "84.235.245.18",
+    "port": 34501,
+    "tls": true,
+    "datacenter": "DXB",
+    "region": "Middle East",
+    "city": "Dubai",
+    "asn": "31898",
+    "latency": "106 ms"
+  },
+  {
+    "ip": "193.123.81.105",
+    "port": 443,
+    "tls": true,
+    "datacenter": "DXB",
+    "region": "Middle East",
+    "city": "Dubai",
+    "asn": "31898",
+    "latency": "106 ms"
+  },
+  {
+    "ip": "129.151.128.114",
+    "port": 34834,
+    "tls": true,
+    "datacenter": "DXB",
+    "region": "Middle East",
+    "city": "Dubai",
+    "asn": "31898",
+    "latency": "108 ms"
+  },
+  {
+    "ip": "212.80.205.244",
+    "port": 2053,
+    "tls": true,
+    "datacenter": "TLV",
+    "region": "Middle East",
+    "city": "Tel Aviv",
+    "asn": "44709",
+    "latency": "216 ms"
+  },
+  {
+    "ip": "2.56.205.182",
+    "port": 8443,
+    "tls": true,
+    "datacenter": "EVN",
+    "region": "Middle East",
+    "city": "Yerevan",
+    "asn": "16190",
+    "latency": "217 ms"
+  },
+  {
+    "ip": "2.56.205.182",
+    "port": 2053,
+    "tls": true,
+    "datacenter": "EVN",
+    "region": "Middle East",
+    "city": "Yerevan",
+    "asn": "16190",
+    "latency": "218 ms"
+  },
+  {
+    "ip": "2.56.206.114",
+    "port": 8443,
+    "tls": true,
+    "datacenter": "EVN",
+    "region": "Middle East",
+    "city": "Yerevan",
+    "asn": "16190",
+    "latency": "219 ms"
+  },
+  {
+    "ip": "77.91.69.141",
+    "port": 8443,
+    "tls": true,
+    "datacenter": "TLV",
+    "region": "Middle East",
+    "city": "Tel Aviv",
+    "asn": "206446",
+    "latency": "219 ms"
+  },
+  {
+    "ip": "77.91.69.51",
+    "port": 2053,
+    "tls": true,
+    "datacenter": "TLV",
+    "region": "Middle East",
+    "city": "Tel Aviv",
+    "asn": "206446",
+    "latency": "220 ms"
+  },
+  {
+    "ip": "77.91.74.150",
+    "port": 2053,
+    "tls": true,
+    "datacenter": "TLV",
+    "region": "Middle East",
+    "city": "Tel Aviv",
+    "asn": "44477",
+    "latency": "220 ms"
+  },
+  {
+    "ip": "176.97.66.175",
+    "port": 443,
+    "tls": true,
+    "datacenter": "MCT",
+    "region": "Middle East",
+    "city": "Muscat",
+    "asn": "9009",
+    "latency": "222 ms"
+  },
+  {
+    "ip": "2.56.206.114",
+    "port": 2053,
+    "tls": true,
+    "datacenter": "EVN",
+    "region": "Middle East",
+    "city": "Yerevan",
+    "asn": "16190",
+    "latency": "223 ms"
+  },
+  {
+    "ip": "2.56.204.183",
+    "port": 443,
+    "tls": true,
+    "datacenter": "EVN",
+    "region": "Middle East",
+    "city": "Yerevan",
+    "asn": "16190",
+    "latency": "224 ms"
+  },
+  {
+    "ip": "77.91.69.51",
+    "port": 8443,
+    "tls": true,
+    "datacenter": "TLV",
+    "region": "Middle East",
+    "city": "Tel Aviv",
+    "asn": "206446",
+    "latency": "224 ms"
+  },
+  {
+    "ip": "77.91.74.150",
+    "port": 8443,
+    "tls": true,
+    "datacenter": "TLV",
+    "region": "Middle East",
+    "city": "Tel Aviv",
+    "asn": "44477",
+    "latency": "225 ms"
+  },
+  {
+    "ip": "77.91.69.141",
+    "port": 2053,
+    "tls": true,
+    "datacenter": "TLV",
+    "region": "Middle East",
+    "city": "Tel Aviv",
+    "asn": "206446",
+    "latency": "226 ms"
+  },
+  {
+    "ip": "212.80.205.244",
+    "port": 8443,
+    "tls": true,
+    "datacenter": "TLV",
+    "region": "Middle East",
+    "city": "Tel Aviv",
+    "asn": "44709",
+    "latency": "227 ms"
+  },
+  {
+    "ip": "77.91.74.6",
+    "port": 443,
+    "tls": true,
+    "datacenter": "TLV",
+    "region": "Middle East",
+    "city": "Tel Aviv",
+    "asn": "44477",
+    "latency": "229 ms"
+  },
+  {
+    "ip": "194.156.103.58",
+    "port": 41210,
+    "tls": true,
+    "datacenter": "EVN",
+    "region": "Middle East",
+    "city": "Yerevan",
+    "asn": "215540",
+    "latency": "240 ms"
+  },
+  {
+    "ip": "213.159.76.202",
+    "port": 2053,
+    "tls": true,
+    "datacenter": "EVN",
+    "region": "Middle East",
+    "city": "Yerevan",
+    "asn": "44477",
+    "latency": "245 ms"
+  },
+  {
+    "ip": "77.91.69.238",
+    "port": 8443,
+    "tls": true,
+    "datacenter": "TLV",
+    "region": "Middle East",
+    "city": "Tel Aviv",
+    "asn": "206446",
+    "latency": "246 ms"
+  },
+  {
+    "ip": "194.156.103.31",
+    "port": 8443,
+    "tls": true,
+    "datacenter": "EVN",
+    "region": "Middle East",
+    "city": "Yerevan",
+    "asn": "215540",
+    "latency": "247 ms"
+  },
+  {
+    "ip": "213.159.76.202",
+    "port": 8443,
+    "tls": true,
+    "datacenter": "EVN",
+    "region": "Middle East",
+    "city": "Yerevan",
+    "asn": "44477",
+    "latency": "248 ms"
+  },
+  {
+    "ip": "2.56.206.64",
+    "port": 443,
+    "tls": true,
+    "datacenter": "EVN",
+    "region": "Middle East",
+    "city": "Yerevan",
+    "asn": "16190",
+    "latency": "254 ms"
+  },
+  {
+    "ip": "94.131.114.54",
+    "port": 2053,
+    "tls": true,
+    "datacenter": "TLV",
+    "region": "Middle East",
+    "city": "Tel Aviv",
+    "asn": "44477",
+    "latency": "254 ms"
+  },
+  {
+    "ip": "77.91.69.238",
+    "port": 2053,
+    "tls": true,
+    "datacenter": "TLV",
+    "region": "Middle East",
+    "city": "Tel Aviv",
+    "asn": "206446",
+    "latency": "255 ms"
+  },
+  {
+    "ip": "94.131.114.50",
+    "port": 81,
+    "tls": true,
+    "datacenter": "TLV",
+    "region": "Middle East",
+    "city": "Tel Aviv",
+    "asn": "44477",
+    "latency": "258 ms"
+  },
+  {
+    "ip": "213.159.76.175",
+    "port": 443,
+    "tls": true,
+    "datacenter": "EVN",
+    "region": "Middle East",
+    "city": "Yerevan",
+    "asn": "44477",
+    "latency": "262 ms"
+  },
+  {
+    "ip": "77.91.69.146",
+    "port": 443,
+    "tls": true,
+    "datacenter": "TLV",
+    "region": "Middle East",
+    "city": "Tel Aviv",
+    "asn": "206446",
+    "latency": "263 ms"
+  }
+]
