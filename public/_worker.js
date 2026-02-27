@@ -2,9 +2,9 @@
 // 彻底移除外部网络请求，仅读取本地数据文件
 
 // ==================== 配置区域 ====================
-const DEFAULT_USER_ID = '2982f122-9649-40dc-bc15-fa3ec91d8921';
-const DEFAULT_HOSTNAME = 'fsnip.chinax.nyc.mn';
-const DEFAULT_ACCESS_KEY = 'xcq0607';
+const DEFAULT_USER_ID = '';
+const DEFAULT_HOSTNAME = '';
+const DEFAULT_ACCESS_KEY = '';
 // ================================================
 
 let clientId = DEFAULT_USER_ID;
