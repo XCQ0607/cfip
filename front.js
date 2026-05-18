@@ -623,6 +623,64 @@ async function handleSelectPage(request) {
             gap: 14px;
             animation: fadeIn 0.3s ease;
         }
+        @media (max-width: 768px) {
+            body {
+                padding: 10px;
+            }
+            .container {
+                padding: 20px;
+                margin: 20px auto;
+                border-radius: 20px;
+            }
+            h1 {
+                font-size: 2rem;
+                flex-direction: column;
+                gap: 8px;
+            }
+            .stats-row {
+                flex-direction: column;
+                gap: 15px;
+            }
+            .tabs-nav {
+                flex-wrap: wrap;
+                gap: 8px;
+            }
+            .tab-btn {
+                font-size: 0.9rem;
+                padding: 10px;
+            }
+            .card {
+                padding: 20px;
+            }
+            .submit-btn {
+                padding: 15px 20px;
+                font-size: 1rem;
+            }
+            .var-box {
+                padding: 15px;
+            }
+            .link-text {
+                font-size: 0.85rem;
+            }
+            .copy-trigger {
+                width: 100%;
+                justify-content: center;
+                box-sizing: border-box;
+            }
+            #c-links div {
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+            }
+            #c-links code.link-text {
+                width: 100% !important;
+            }
+            #c-links button.copy-trigger {
+                margin-left: 0 !important;
+                width: auto;
+                align-self: flex-start;
+            }
+        }
     </style>
 </head>
 <body>

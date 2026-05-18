@@ -313,6 +313,64 @@ async function handleSelectPage(request, env) {
         .link-text { word-break: break-all; color: #38bdf8; font-size: 0.95rem; font-family: monospace; text-decoration: none; display: block; margin-bottom: 18px; max-height: 100px; overflow-y: auto; }
         .copy-trigger { background: rgba(255,255,255,0.1); color: #fff; border: 1px solid rgba(255,255,255,0.2); padding: 10px 24px; border-radius: 12px; font-weight: 600; cursor: pointer; transition: all 0.2s; display: inline-flex; align-items: center; gap: 8px; }
         .var-box { display: none; margin-top: 18px; padding: 20px; background: #fff; border: 1px solid var(--border); border-radius: 16px; flex-direction: column; gap: 14px; }
+        @media (max-width: 768px) {
+            body {
+                padding: 10px;
+            }
+            .container {
+                padding: 20px;
+                margin: 20px auto;
+                border-radius: 20px;
+            }
+            h1 {
+                font-size: 2rem;
+                flex-direction: column;
+                gap: 8px;
+            }
+            .stats-row {
+                flex-direction: column;
+                gap: 15px;
+            }
+            .tabs-nav {
+                flex-wrap: wrap;
+                gap: 8px;
+            }
+            .tab-btn {
+                font-size: 0.9rem;
+                padding: 10px;
+            }
+            .card {
+                padding: 20px;
+            }
+            .submit-btn {
+                padding: 15px 20px;
+                font-size: 1rem;
+            }
+            .var-box {
+                padding: 15px;
+            }
+            .link-text {
+                font-size: 0.85rem;
+            }
+            .copy-trigger {
+                width: 100%;
+                justify-content: center;
+                box-sizing: border-box;
+            }
+            #c-links div {
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+            }
+            #c-links code.link-text {
+                width: 100% !important;
+            }
+            #c-links button.copy-trigger {
+                margin-left: 0 !important;
+                width: auto;
+                align-self: flex-start;
+            }
+        }
     </style>
 </head>
 <body>
@@ -354,7 +412,7 @@ async function handleSelectPage(request, env) {
                                 <option value="safari">safari</option>
                                 <option value="ios">ios</option>
                                 <option value="android">android</option>
-                                <option value="edge">edgr</option>
+                                <option value="edge">edge</option>
                                 <option value="360">360</option>
                                 <option value="qq">qq</option>
                                 <option value="random">random</option>

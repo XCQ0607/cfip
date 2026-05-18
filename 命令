@@ -11,5 +11,8 @@ npx wrangler pages dev public
 # 部署 public 目录到名为 cfip 的项目
 npx wrangler pages deploy public --project-name cfip
 
+npx wrangler pages deploy public --project-name cfip --branch main
+
+
 ## 4. 删除项目 (慎用)
 npx wrangler pages project delete cfip
