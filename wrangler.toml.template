@@ -1,0 +1,7 @@
+name = "cfip"
+pages_build_output_dir = "public"
+
+[vars]
+DOMAIN = ""
+SECRET = ""
+UUID = ""

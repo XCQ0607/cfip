@@ -195,6 +195,7 @@ async function handleMultiApiIntegration(request, url) {
     const tempUserId = url.searchParams.get('USER_ID') || clientId;
     const tempHostname = url.searchParams.get('HOSTNAME') || serverHost;
     const tempPath = url.searchParams.get('PATH') || path;
+    const tempFp = url.searchParams.get('fp') || 'chrome';
 
     try {
         const nodeData = await fetchNodeData();
@@ -210,7 +211,7 @@ async function handleMultiApiIntegration(request, url) {
         ];
 
         let configURL = serverList.map(item =>
-            `vless://${tempUserId}@${item.domain}:443?encryption=none&security=tls&sni=${tempHostname}&fp=randomized&type=ws&host=${tempHostname}&path=${encodeURIComponent(tempPath)}${allowInsecure}#${encodeURIComponent(item.name)}`
+            `vless://${tempUserId}@${item.domain}:443?encryption=none&security=tls&sni=${tempHostname}&fp=${tempFp}&type=ws&host=${tempHostname}&path=${encodeURIComponent(tempPath)}${allowInsecure}#${encodeURIComponent(item.name)}`
         ).join('\n');
 
         if (isBase64) configURL = btoa(configURL);
@@ -230,13 +231,14 @@ async function handleCountryAPI(request, url) {
     const tempUserId = url.searchParams.get('USER_ID') || clientId;
     const tempHostname = url.searchParams.get('HOSTNAME') || serverHost;
     const tempPath = url.searchParams.get('PATH') || path;
+    const tempFp = url.searchParams.get('fp') || 'chrome';
 
     try {
         const ipData = await fetchCountryBestIP(countryCode);
         if (ipData.length === 0) return new Response(`Not found`, { status: 404 });
 
         let configURL = ipData.map(item =>
-            `vless://${tempUserId}@${item.ip}:${item.port}?encryption=none&security=tls&sni=${tempHostname}&fp=randomized&type=ws&host=${tempHostname}&path=${encodeURIComponent(tempPath)}&allowInsecure=1#${encodeURIComponent(countryCode + '-' + item.ip + '-' + item.port)}`
+            `vless://${tempUserId}@${item.ip}:${item.port}?encryption=none&security=tls&sni=${tempHostname}&fp=${tempFp}&type=ws&host=${tempHostname}&path=${encodeURIComponent(tempPath)}&allowInsecure=1#${encodeURIComponent(countryCode + '-' + item.ip + '-' + item.port)}`
         ).join('\n');
 
         if (isBase64) configURL = btoa(configURL);
@@ -255,6 +257,7 @@ async function handleBestIPAPI(request, url) {
     const tempUserId = url.searchParams.get('USER_ID') || clientId;
     const tempHostname = url.searchParams.get('HOSTNAME') || serverHost;
     const tempPath = url.searchParams.get('PATH') || path;
+    const tempFp = url.searchParams.get('fp') || 'chrome';
 
     try {
         const ipData = await fetchGlobalBestIP();
@@ -262,7 +265,7 @@ async function handleBestIPAPI(request, url) {
 
         let configURL = ipData.map(item => {
             const nodeName = `${item.ip}-${item.port}-${item.city || 'Unknown'}-${item.latency || 'Unknown'}`;
-            return `vless://${tempUserId}@${item.ip}:${item.port}?encryption=none&security=${item.tls ? 'tls' : 'none'}&sni=${tempHostname}&fp=randomized&type=ws&host=${tempHostname}&path=${encodeURIComponent(tempPath)}&allowInsecure=1#${encodeURIComponent(nodeName)}`;
+            return `vless://${tempUserId}@${item.ip}:${item.port}?encryption=none&security=${item.tls ? 'tls' : 'none'}&sni=${tempHostname}&fp=${tempFp}&type=ws&host=${tempHostname}&path=${encodeURIComponent(tempPath)}&allowInsecure=1#${encodeURIComponent(nodeName)}`;
         }).join('\n');
 
         if (isBase64) configURL = btoa(configURL);
@@ -283,6 +286,7 @@ async function handleRegionAPI(request, url) {
     const tempUserId = url.searchParams.get('USER_ID') || clientId;
     const tempHostname = url.searchParams.get('HOSTNAME') || serverHost;
     const tempPath = url.searchParams.get('PATH') || path;
+    const tempFp = url.searchParams.get('fp') || 'chrome';
 
     try {
         const ipData = await fetchRegionBestIP(region, useRegex);
@@ -290,7 +294,7 @@ async function handleRegionAPI(request, url) {
 
         let configURL = ipData.map(item => {
             const nodeName = `${region}-${item.city || 'Unknown'}-${item.latency || 'Unknown'}`;
-            return `vless://${tempUserId}@${item.ip}:${item.port}?encryption=none&security=${item.tls ? 'tls' : 'none'}&sni=${tempHostname}&fp=randomized&type=ws&host=${tempHostname}&path=${encodeURIComponent(tempPath)}&allowInsecure=1#${encodeURIComponent(nodeName)}`;
+            return `vless://${tempUserId}@${item.ip}:${item.port}?encryption=none&security=${item.tls ? 'tls' : 'none'}&sni=${tempHostname}&fp=${tempFp}&type=ws&host=${tempHostname}&path=${encodeURIComponent(tempPath)}&allowInsecure=1#${encodeURIComponent(nodeName)}`;
         }).join('\n');
 
         if (isBase64) configURL = btoa(configURL);
@@ -653,9 +657,33 @@ async function handleSelectPage(request) {
                     <label class="check-wrap"><input type="checkbox" id="m-b64"> 采用 Base64 协议编码</label>
                     <label class="check-wrap"><input type="checkbox" id="m-vars-toggle" onchange="toggleBox('multi')"> 手动指定临时覆盖变量</label>
                     <div id="multi-vars" class="var-box" style="display:none;">
-                        <input type="text" id="m-uid" value="${clientId}" placeholder="覆盖 UUID (可选)">
-                        <input type="text" id="m-host" value="${serverHost}" placeholder="覆盖 Hostname (可选)">
-                        <input type="text" id="m-path" value="${path}" placeholder="自定义传输路径 Path">
+                        <div>
+                            <label class="field-label">覆盖 UUID:</label>
+                            <input type="text" id="m-uid" value="${clientId}" placeholder="覆盖 UUID (可选)">
+                        </div>
+                        <div>
+                            <label class="field-label">覆盖 Hostname:</label>
+                            <input type="text" id="m-host" value="${serverHost}" placeholder="覆盖 Hostname (可选)">
+                        </div>
+                        <div>
+                            <label class="field-label">传输路径 Path:</label>
+                            <input type="text" id="m-path" value="${path}" placeholder="自定义传输路径 Path">
+                        </div>
+                        <div>
+                            <label class="field-label">指纹 Fingerprint (fp):</label>
+                            <select id="m-fp">
+                                <option value="chrome" selected>chrome</option>
+                                <option value="firefox">firefox</option>
+                                <option value="safari">safari</option>
+                                <option value="ios">ios</option>
+                                <option value="android">android</option>
+                                <option value="edge">edge</option>
+                                <option value="360">360</option>
+                                <option value="qq">qq</option>
+                                <option value="random">random</option>
+                                <option value="randomized">randomized</option>
+                            </select>
+                        </div>
                     </div>
                 </div>
                 <button class="submit-btn" onclick="buildMulti()">生成 VLESS 订阅链接</button>
@@ -794,9 +822,11 @@ async function handleSelectPage(request) {
                 const uid = document.getElementById('m-uid').value.trim();
                 const host = document.getElementById('m-host').value.trim();
                 const path = document.getElementById('m-path').value.trim();
+                const fp = document.getElementById('m-fp').value;
                 if (uid && uid !== U_ID) query.push('USER_ID=' + encodeURIComponent(uid));
                 if (host && host !== S_HOST) query.push('HOSTNAME=' + encodeURIComponent(host));
                 if (path) query.push('PATH=' + encodeURIComponent(path));
+                if (fp && fp !== 'chrome') query.push('fp=' + encodeURIComponent(fp));
             }
             if (query.length) url += '?' + query.join('&');
             const target = document.getElementById('m-link');
